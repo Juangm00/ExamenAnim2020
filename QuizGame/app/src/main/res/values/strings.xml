@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">QuizGame</string>
+    <string name="false">FALSE</string>
+    <string name="FALSO">Falso</string>
+    <string name="TRUE">true</string>
+</resources>

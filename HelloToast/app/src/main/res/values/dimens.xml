@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="contador_size">160sp</dimen>
+    <dimen name="toast_size">80sp</dimen>
+    <dimen name="count_size">80sp</dimen>
+</resources>
