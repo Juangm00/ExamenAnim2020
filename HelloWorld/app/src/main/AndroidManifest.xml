@@ -1,31 +1,50 @@
+<!-- Versión XML y character encoding -->
 <?xml version="1.0" encoding="utf-8"?>
+<!-- etiqueta para que empiece el manifest y la definición del nombre-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    <!-- Nombre del package-->
     package="com.example.helloworld">
+    <!-- Línea para pedir permiso para la cámara-->
     <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Línea para utilizar la cámara-->
     <uses-feature android:name="android.hardware.camera" />
+    <!-- Línea para pedir permiso para enviar SMS-->
     <uses-permission android:name="android.permission.SEND_SMS"/>
-
+    <!-- Etiqueta para abrir la aplicación-->
     <application
-
+        <!-- Permite que la aplicación se pueda restaurar-->
         android:allowBackup="true"
+        <!--Icono para la aplicación -->
         android:icon="@mipmap/ic_launcher"
+        <!--Nombre de la aplicación -->
         android:label="@string/app_name"
+        <!--Icono del launcher -->
         android:roundIcon="@mipmap/ic_launcher_round"
+        <!--Línea para determinar si la aplicación soporta layouts de derecha-izquierda -->
         android:supportsRtl="true"
+        <!--Tema por defecto para toda la aplicación -->
         android:theme="@style/AppTheme">
+        <!--Etiqueta que abre la actividad -->
         <activity
+            <!--Nombre de la actividad -->
             android:name=".MainActivity2"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar">
+            <!-- Especifica los intents a los que la actividad puede responder-->
             <intent-filter>
+            <!-- Empieza la actividad como el punto de partida-->
                 <action android:name="android.intent.action.MAIN" />
-
+                <!-- Empieza la actividad activando el launcher-->
                 <category android:name="android.intent.category.LAUNCHER" />
+            <!-- Etiqueta para cerrar el intent-->
             </intent-filter>
+        <!-- Etiqueta para cerrar la actividad-->
         </activity>
+        <!-- Etiqueta para abrir la actividad y el nombre-->
         <activity android:name=".MainActivity">
-
+        <!-- Etiqueta para cerrar la actividad -->
         </activity>
+    <!-- Etiqueta para cerrar la aplicación-->
     </application>
-
+<!-- Etiqueta para cerrar el manifest -->
 </manifest>
