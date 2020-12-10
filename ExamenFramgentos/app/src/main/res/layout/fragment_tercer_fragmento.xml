@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TercerFragmento"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <SeekBar
+        android:id="@+id/BarraRoja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/Red"
+        android:thumbTint="@color/Red" />
+
+    <SeekBar
+        android:id="@+id/BarraVerde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/Verde"
+        android:thumbTint="@color/Verde" />
+
+    <SeekBar
+        android:id="@+id/BarraAzul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/Azul"
+        android:thumbTint="@color/Azul" />
+
+    <Button
+        android:id="@+id/btnCambiarColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cambiar_color"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
